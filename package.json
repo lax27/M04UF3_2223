@@ -1,0 +1,19 @@
+{
+  "name": "m04uf3_2223",
+  "version": "1.0.0",
+  "description": "lenguajes de marca UF3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lax27/M04UF3_2223.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lax27/M04UF3_2223/issues"
+  },
+  "homepage": "https://github.com/lax27/M04UF3_2223#readme"
+}
