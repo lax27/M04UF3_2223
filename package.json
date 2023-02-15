@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lax27/M04UF3_2223/issues"
   },
-  "homepage": "https://github.com/lax27/M04UF3_2223#readme"
+  "homepage": "https://github.com/lax27/M04UF3_2223#readme",
+  "dependencies": {
+    "node-static": "^0.7.11"
+  }
 }

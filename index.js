@@ -1,7 +1,9 @@
 
 const http = require("http");
 const fs = require("fs");
+const files_static = require("node-static");
 
+let files = new files_static.Server("./public");
 
 function sendIndex(response){
 
@@ -41,9 +43,12 @@ function sendPlayer(response){
 
 
 http.createServer(function(request,response){
+	request.addListener('end',function(){
+	files.serve(request, response);
 	
-	console.log(request.url);
-	
+	}).resume();	
+		
+/*	
 	let url = request.url.split("/");
 
 	switch(url[1]){
@@ -53,8 +58,8 @@ http.createServer(function(request,response){
 
 		default:
 			sendIndex(response);
+*/
 
-	}
 }).listen(6969);
 
 
